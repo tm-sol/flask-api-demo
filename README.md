@@ -1,2 +1,2 @@
 # flask-api-demo
-Example API demo using Flask
+This is an example API demo using Flask
