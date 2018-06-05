@@ -36,8 +36,8 @@ def add_poster():
     name = request.json['name']
     url = request.json['url']
 
-    poster_id = collection.insert({'name': name, 'url': url})
-    new_poster = collection.find_one({'_id': poster_id})
+    poster_id = collection.insert_one({'name': name, 'url': url})
+    new_poster = collection.find_one({'_id': poster_id.inserted_id})
 
     output = {'name': new_poster['name'], 'url': new_poster['url']}
     return jsonify('result', output)

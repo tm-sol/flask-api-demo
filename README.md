@@ -1,2 +1,2 @@
 # flask-api-demo
-This is an example API demo using Flask
+This is an example API demo using Flask and MongoDB
